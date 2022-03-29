@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <link href="media/image/fav.ico" rel="shortcut icon"> <!-- icon tab browser -->
+        <link href="image/icon.png" rel="shortcut icon"> <!-- icon tab browser -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,27 +23,25 @@
             } */
             body {
                 font-family: 'Nunito', sans-serif;
+                /* overflow: hidden; */
             }
             .navbar{
                 padding:0 136.5px;
-                /* border:solid black 1px; */
                 width:100%;
                 height:9%;
             }
             .logo{
-                height:100%;
-            }
-            /* .antialiased{
-                background-image: url('image/Login100.png');
-                background-image:url({{url('image/Login100.png')}})
-            } */
-            html {
-                background-image: url('{{ asset('image/Login100.png') }}');
+                height:90%;
             }
             .nav_col{
                 color:#343A40;
+                font-size:18px;
+            }
+            .img-fluid{
+                object-fit: fill;
             }
         </style>
+
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen sm:items-center py-4 sm:pt-0">
@@ -52,7 +50,7 @@
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500">Dashboard</a>
                     @else
-                        <img class="logo me-auto p-2 bd-highlight" src="{{url('/image/Logo4.png')}}">
+                        <img class="logo me-auto p-2 bd-highlight" src="{{url('/image/logo.png')}}">
                         <a href="{{ route('login') }}" class="nav_col p-2 bd-highlight text-sm">Beranda</a>
 
                         @if (Route::has('register'))
@@ -61,11 +59,8 @@
                     @endauth
                 </div>
             @endif
-
-            <div>
-                <h1>INI CERITANYA LANDING PAGE GUYS<h1>
-                <h3>login sm register ada di pojok kanan atas, bisa dicoba</h3>
-            </div>
+            <img class="img-fluid" src="{{url('/image/bg_login.png')}}">
+        
             <!-- <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                     <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
