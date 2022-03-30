@@ -31,9 +31,9 @@
     <body>
         <x-guest-layout>
             <x-jet-authentication-card class="p-5">
-            <img class="logo" src="{{url('/image/logo.png')}}">
-            <p class="title mb-1">Welcome to Website!👋 </p>
-            <p class="_text">Please Sign-in to your Account and start the Adventure</p>
+                <img class="logo" src="{{url('/image/logo.png')}}">
+                <p class="title mb-1">Welcome to Website!👋 </p>
+                <p class="_text">Please Sign-in to your Account and start the Adventure</p>
                 <x-slot name="logo">
                     <img style="display:none" src="{{ asset('image/logo.png') }}" />
                 </x-slot>
