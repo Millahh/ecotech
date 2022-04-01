@@ -26,6 +26,16 @@
                 padding-top:40px;
                 padding-bottom:50px;
             }
+
+        /*responsive. bljr edit sass*/
+        @media only screen and (max-width: 630px) {
+            .underline{
+                margin-left:30%;
+            }
+            .bg-white{
+                width:100px;
+            }
+        }
         </style>
     </head>
     <body>
