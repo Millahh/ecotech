@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('welcome');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -29,4 +29,24 @@ Route::get('/clear-cache', function() {
 // Route::get('/scan','App\Http\Controllers\Scan@scanSR');
 Route::get('/scan', function () {
     return view('scan');
+});
+
+Route::get('/atm-menu', function () {
+    return view('ATM.menu');
+});
+
+Route::get('/atm-qrcode', function () {
+    return view('ATM.QRCode');
+});
+
+Route::get('/atm-idcard', function () {
+    return view('ATM.IDCard');
+});
+
+Route::get('/wallet', function () {
+    return view('wallet');
+});
+
+Route::get('/tes', function () {
+    return view('tes');
 });
