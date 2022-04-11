@@ -1,0 +1,64 @@
+.judul{
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 3.5rem;
+}
+
+.header{
+    background-color: #F6F6F6;
+}
+
+.features{
+    margin-top:3rem;
+}
+
+.article{
+    margin-top:3rem;
+}
+
+.r-header{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.desk{
+    font-size: 12px;
+}
+
+.card-img-top{
+    /* max-width: 100px; */
+    width: 100%;
+    padding-inline: 1.6rem;
+    padding-top: 0.6rem;
+    padding-bottom: 1.2rem;
+}
+
+.f-card{
+    max-width: 130px;
+    width: 100%;
+}
+
+.card-fitur{
+    margin-inline: 2rem;
+}
+
+.card-text{
+    font-size: 12px;
+}
+
+.a-card{
+    background-color: #F6F6F6 !important;
+    border: #F6F6F6 !important;
+}
+
+.article-title{
+    color: #212529;
+}
+
+.article-desk{
+    color: #343A40;
+}
+
+.card-subtitle{
+    font-size: 12px;
+}
