@@ -47,6 +47,7 @@ Route::get('/wallet', function () {
     return view('wallet');
 });
 
-Route::get('/tes', function () {
-    return view('tes');
+
+Route::get('/test/env', function () {
+    dd(env('DB_DATABASE')); // Dump 'db' variable value one by one
 });
