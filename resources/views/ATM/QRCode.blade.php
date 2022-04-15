@@ -14,12 +14,13 @@
 <body>
     <div class="container bg2">
         <img class="headerLogo" src="{{url('/image/logoBesar.png')}}">
-        <div class="content-menu">
+        <div class="content">
             <!-- isinya text, barcode -->
-            <p style="margin-top:5.1vw; font-size:3vw; font-weight:bold; color:#343A40">QR Code</p>
+            <p style="margin-top:4.1vw; font-size:3vw; font-weight:bold; color:#343A40">QR Code</p>
             <p style="font-size:2vw; font-weight:bold; color:#6C757D; margin-top:1vw; margin-bottom:3vw">scan the qr code below through the website and your smartphone!️</p>
+            {!! QrCode::size(180)->generate('MXx1obO9oez0eM0nvLK1cHenOmHpdUtsAwr8d5S3qSkKYIiRGCWry8B44RbjfA9uMcGrzJtlRPycXu9inAMFDU6iYLI7jqaSL');!!}
         </div>
-        <a href="atm-menu"><button class="red">Back</button></a>
+        <a href="atm-signin"><button class="red">Back</button></a>
     </div>
 </body>
 </html>

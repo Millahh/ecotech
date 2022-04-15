@@ -13,6 +13,7 @@ html, body{
     background-image: url("/image/bg_atm2.png");
 }
 .container{
+    position:fixed;
     height:100vw;
     background-repeat: no-repeat;
     background-position: center;
@@ -24,7 +25,7 @@ html, body{
 .headerLogo{
     width:28%;
 }
-.content-menu{
+.content{
     text-align: center;
     margin: 0 auto;
 }
