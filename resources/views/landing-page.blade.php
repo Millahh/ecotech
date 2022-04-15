@@ -3,9 +3,9 @@
 
 @section('container')
 <section class="header">
-    <div class="container">
+    <div class="container container-header">
         <div class="row r-header">
-            <div class="col-7">
+            <div class="col-md-7 isi-header">
                 <div class="row">
                     <h6 class="judul">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h6>
                 </div>
@@ -13,13 +13,13 @@
                     <h6 class="desk">Website merupakan salah satu sumber informasi yang paling sering diakses. Saat ini, website merupakan media yang wajib dimiliki oleh perusahaan atau instansi maupun start-up.</h6>
                 </div>
                 <div class="row">
-                    <div class="col pt-4">
-                        <a href="#" class="btn btn-xl" style="color:white; background-color: #28DF99">Daftar Sekarang</a>
+                    <div class="col-md pt-4">
+                        <a href="#" class="btn btn-dftr" style="color:white; background-color: #28DF99">Daftar Sekarang</a>
                     </div>
                 </div>
             </div>
             <div class="col-4">
-                <img src="/image/header.png" alt="" width="472">
+                <img class="img-header" src="/image/header.png" alt="">
             </div>
         </div>
     </div>
@@ -29,8 +29,8 @@
         <div class="row pb-4">
             <h4 style="font-weight: bold; font-size: 28px; color: #343A40">Features</h4>        
         </div>
-        <div class="row justify-content-md-center">
-            <div class="card-fitur col-md-2">
+        <div class="row r-card justify-content-md-center">
+            <div class="card-fitur col-3">
                 <div class="card f-card">
                     <img src="image/atm-machine.png" class="card-img-top" alt="atm-icon">
                     
@@ -38,7 +38,7 @@
                     
                 </div>
             </div>
-            <div class="card-fitur col-md-2">
+            <div class="card-fitur col-3">
                 <div class="card f-card">
                     <img src="image/wallet.png" class="card-img-top" alt="...">
                     
@@ -46,14 +46,14 @@
                     
                 </div>
             </div>
-            <div class="card-fitur col-md-2">
+            <div class="card-fitur col-3">
                 <div class="card f-card">
                     <img src="image/bag-shop.png" class="card-img-top" alt="...">                
                     <h5 class="card-title text-center">Marchant</h5>
                     
                 </div>
             </div>
-            <div class="card-fitur col-md-2">
+            <div class="card-fitur col-3">
                 <div class="card f-card">
                     <img src="image/location.png" class="card-img-top" alt="...">                
                     <h5 class="card-title text-center">Location</h5>                
@@ -69,8 +69,8 @@
         <div class="row pb-4">
             <h4 style="font-weight: bold; font-size: 28px; color: #343A40">Articles</h4>        
         </div>
-        <div class="row">
-            <div class="col-3">
+        <div class="row row-article">
+            <div class="col-md-3 col-card">
                 <div class="card a-card">
                     <div class="card-body">
                         <h5 class="card-title article-title">Article 1</h5>
@@ -80,7 +80,7 @@
                     </div>
                 </div>            
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-card">
                 <div class="card a-card">
                     <div class="card-body">
                         <h5 class="card-title article-title">Article 1</h5>
@@ -90,7 +90,7 @@
                     </div>
                 </div>            
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-card">
                 <div class="card a-card">
                     <div class="card-body">
                         <h5 class="card-title article-title">Article 1</h5>
@@ -100,7 +100,7 @@
                     </div>
                 </div>            
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-card">
                 <div class="card a-card">
                     <div class="card-body">
                         <h5 class="card-title article-title">Article 1</h5>

@@ -17,3 +17,13 @@ nav{
     padding-bottom: 2rem;
 }
 
+@media only screen and (max-width: 767px){
+    body{
+        background-color: #F6F6F6;
+    }
+
+    section.footer{
+        display: none;
+    }
+}
+

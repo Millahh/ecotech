@@ -12,7 +12,7 @@
                     <a style="color: black" class="nav-link" href="#">Tentang</a>
                 </li>
                 <li class="nav-item">
-                    <a style="color: white" class="px-4 btn btn-xl nav-link" role="button" href="{{ url('/') }}">Login</a>
+                    <a style="color: white" class="px-4 btn btn-xl nav-link" role="button" href="{{ url('/login') }}">Login</a>
                 </li>
             </ul>
         </div>

@@ -14,8 +14,14 @@
     <title>EcoFriendly</title>
   </head>
   <body>
+    <section>
+      @if(Auth::check())
+        @include('partials.navbar-logged')
+      @else
+        @include('partials.navbar')
+      @endif
 
-    @include('partials.navbar')
+    </section>
 
     <section>
         @yield('container')
