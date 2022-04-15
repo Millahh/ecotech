@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Users;
 use App\Models\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -26,7 +25,7 @@ public function idcard(){
 public function idcardPost(Request $request){
     $AppID = $request->AppID;
     // $password = $request->password;
-    $data = Users::where('AppID',$AppID)->first();
+    $data = User::where('AppID',$AppID)->first();
     if($data){
         return redirect('atm-qrcode');
         //cek data ada/tidak
