@@ -39,9 +39,13 @@ Route::get('/atm-qrcode', function () {
     return view('ATM.QRCode');
 });
 
-Route::get('/atm-idcard', function () {
-    return view('ATM.IDCard');
-});
+// Route::get('/atm-idcard', function () {
+//     return view('ATM.IDCard');
+// });
+
+Route::get('/atm-idcard', 'ATM@idcard');
+
+Route::post('/idcardPost', 'ATM@idcardPost');
 
 Route::get('/wallet', function () {
     return view('wallet');

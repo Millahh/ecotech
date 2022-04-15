@@ -40,6 +40,9 @@ button{
     font-family:'Nunito';
     border-radius:4.8px;
 }
+button .kanan{
+    margin-left:50px;
+}
 button:hover{
     transition: .5s;
     background: #22C586;
@@ -69,4 +72,38 @@ input{
     font-family:'Nunito';
     border: 1px solid #CED4DA;
     border-radius:5px;
+}
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    background-color: #f6f6f600;
+    margin-top:11%;
+  }
+  
+.flex-container > div {
+    background-color: #f6f6f600;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+.loader{
+    position:fixed;
+    width: 100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* animation: spin 1.5s infinite linear; */
+}
+.loader.hidden{
+    animation: fadeOut 100s;
+    animation-fil-mode:forwards;
+}
+@keyframes spin{
+    100%{
+        /* transform: rotate(360deg); */
+        opacity: 0;
+        visibility: hidden;
+    }
 }

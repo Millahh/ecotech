@@ -18,8 +18,10 @@
     <div class="container bg1">
         <img class="headerLogo" src="{{url('/image/logoBesar.png')}}">
         <div class="content">
+            <form action="{{ url('/idcardPost') }}" method="post">
             <p style="margin-top:5.1vw; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:3vw">Enter your ID</p>
             <input class="use-keyboard-input" type="text" placeholder="example : 12022">
+
         </div>
     </div>
 </body>
