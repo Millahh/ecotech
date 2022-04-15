@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ATMController;
+use App\Http\Controllers\Controller;
+use App\Models\Users;
+use App\Models\User;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,16 +22,15 @@ Route::get('/', function () {
     return view('landing-page');
 });
 
-// Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
-//     return view('landing-page');
-// })->name('landing-page');
+Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
+    return view('landing-page');
+})->name('landing-page');
 
 Route::get('/clear-cache', function() {
     Artisan::call('cache:clear');
     return "Cache is cleared";
 });
 
-// Route::get('/scan','App\Http\Controllers\Scan@scanSR');
 Route::get('/scan', function () {
     return view('scan');
 });
@@ -43,9 +47,11 @@ Route::get('/atm-qrcode', function () {
 //     return view('ATM.IDCard');
 // });
 
-Route::get('/atm-idcard', 'ATM@idcard');
+Route::get('/atm-idcard', [ATMController::class, 'idcard']);
 
-Route::post('/idcardPost', 'ATM@idcardPost');
+// Route::get('/atm-idcard', 'ATM@idcard');
+Route::post('/idcardPost', [ATMController::class, 'idcardPost']);
+// Route::post('/idcardPost', 'ATM@idcardPost')->name('idcardPost');
 
 Route::get('/wallet', function () {
     return view('wallet');
