@@ -1,0 +1,29 @@
+*{
+    font-family:'Nunito';
+}
+
+nav{
+    font-weight: 300;
+}
+
+.btn{
+    background: #28DF99;
+    border: #28DF99;
+}
+
+.footer{
+    background-color: #99F3BD;    
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 767px){
+    body{
+        background-color: #F6F6F6;
+    }
+
+    section.footer{
+        display: none;
+    }
+}
+
