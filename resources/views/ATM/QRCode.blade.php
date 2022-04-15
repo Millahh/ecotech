@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container bg2">
-        <img style="padding-top:3%" class="headerLogo" src="{{url('/image/logoBesar.png')}}">
+        <img class="headerLogo" src="{{url('/image/logoBesar.png')}}">
         <div class="content-menu">
             <!-- isinya text, barcode -->
             <p style="margin-top:4.1vw; font-size:3vw; font-weight:bold; color:#343A40">QR Code</p>

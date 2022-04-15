@@ -63,7 +63,10 @@
         .popup_box .btns{
             margin: 40px 0 0 0;
         }
-        .btns .btn1, .btns .btn2{
+        .btns2{
+            margin: 20px 0 0 0;
+        }
+        .btns .btn1, .btns .btn2, .btns .btn3, .btns .btn0{
             font-size: 14px;
             border-radius: 4px;
             text-decoration:none;
@@ -78,6 +81,15 @@
             background: #28DF99;
             color:white;
             padding: 7px 24px;
+        }
+        .btns .btn3{
+            background: #F52F53;
+            color:white;
+            padding: 7px 24px;
+        }
+        .btns .btn3:hover{
+            transition: .5s;
+            background: #C31635;
         }
         .btns .btn1:hover{
             transition: .5s;
@@ -125,8 +137,8 @@
         <p style="font-size:16px; margin-bottom:1%; color:#6C757D">Scan to Login to ATM</p>
         <div style="border-radius:5px; height:350px; background-color:#D1D1D1" id="reader" width="600px"></div>
     </div>
-    <div class="custom_alert">
-      <div class="popup_box">
+    <div class="custom-alert-success">
+      <div class="popup_box Asuccess">
         <label>Are you sure you're logged into Atm?</label>
         <div class="btns">
           <a href="#" class="btn1">No</a>
@@ -134,21 +146,37 @@
         </div>
       </div>
     </div>
+    <div class="custom-alert-error">
+      <div class="popup_box Aerror">
+        <label>The QR-Code entered must match the code on the EcoFriendly ATM machine!</label>
+        <div class="btns">
+            <a href="#" class="btn3">Close</a>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
     <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
     <script>
+
         function onScanSuccess(decodedText, decodedResult) {
-        // handle the scanned code as you like, for example:
-        console.log(`Code matched = ${decodedText}`, decodedResult);
-        $('.popup_box').css("display", "block");
-        $('.btn1').click(function(){
-          $('.popup_box').css("display", "none");
-        });
-        $('.btn2').click(function(){
-          $('.popup_box').css("display", "none");
-          alert("Success logged into ATM.");
-        });
+            if('MXx1obO9oez0eM0nvLK1cHenOmHpdUtsAwr8d5S3qSkKYIiRGCWry8B44RbjfA9uMcGrzJtlRPycXu9inAMFDU6iYLI7jqaSL'==decodedText){
+                console.log(`Code matched = ${decodedText}`, decodedResult);
+                $('.Asuccess').css("display", "block");
+                $('.btn1').click(function(){
+                $('.Asuccess').css("display", "none");
+                });
+                $('.btn2').click(function(){
+                $('.Asuccess').css("display", "none");
+                alert("Success logged into ATM.");
+                });
+            }
+            else{
+                $('.Aerror').css("display", "block");
+                $('.btn3').click(function(){
+                $('.Aerror').css("display", "none");
+                });
+            }
         }
 
         function onScanFailure(error) {

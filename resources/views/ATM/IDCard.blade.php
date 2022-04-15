@@ -9,15 +9,18 @@
     <link href="image/icon.png" rel="shortcut icon"> <!-- icon tab browser -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/atmstyle.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/dcode.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/keyboard.css')}}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- <link rel="stylesheet" href="{{ asset('css/atmstyle.css') }}"> -->
 </head>
 <body>
     <div class="container bg1">
         <img class="headerLogo" src="{{url('/image/logoBesar.png')}}">
         <div class="content-menu">
-            <p style="margin-top:5.1vw; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:6vw">Enter your ID</p>
-            <input type="text" placeholder="example : 12022">
+            <p style="margin-top:5.1vw; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:3vw">Enter your ID</p>
+            <input class="use-keyboard-input" type="text" placeholder="example : 12022">
         </div>
-    </div>
 </body>
 </html>
+<script src="js/keyboard.js"></script>

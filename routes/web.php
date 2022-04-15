@@ -51,3 +51,7 @@ Route::get('/wallet', function () {
 Route::get('/test/env', function () {
     dd(env('DB_DATABASE')); // Dump 'db' variable value one by one
 });
+
+Route::get('/test', function () {
+    return view('ATM.test');
+});
