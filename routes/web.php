@@ -34,8 +34,22 @@ Route::get('/scan', function () {
     return view('scan');
 });
 
+Route::get('/wallet', function () {
+    return view('wallet');
+});
+
+Route::get('/test/env', function () {
+    dd(env('DB_DATABASE')); // Dump 'db' variable value one by one
+});
+
+
+//////////////ATM ROUTE///////////////////
 Route::get('/atm-signin', function () {
     return view('ATM.signin');
+});
+
+Route::get('/atm-menu', function () {
+    return view('ATM.menu');
 });
 
 Route::get('/atm-qrcode', function () {
@@ -44,6 +58,18 @@ Route::get('/atm-qrcode', function () {
 
 Route::get('/atm-earning', function () {
     return view('ATM.earning');
+});
+
+Route::get('/atm-balance', function () {
+    return view('ATM.balance');
+});
+
+Route::get('/atm-idsalah', function () {
+    return view('ATM.IDSalah');
+});
+
+Route::get('/atm-idload', function () {
+    return view('ATM.IDLoad');
 });
 
 // Route::get('/atm-idcard', function () {
@@ -56,19 +82,6 @@ Route::get('/atm-idcard', [ATMController::class, 'idcard']);
 
 Route::post('/idcardPost', [ATMController::class, 'idcardPost']);
 
-Route::get('/wallet', function () {
-    return view('wallet');
-});
-
-
-Route::get('/test/env', function () {
-    dd(env('DB_DATABASE')); // Dump 'db' variable value one by one
-});
-
-Route::get('/atm-idsalah', function () {
-    return view('ATM.IDSalah');
-});
-
-Route::get('/atm-idload', function () {
-    return view('ATM.IDLoad');
+Route::get('/atm-logout', function () {
+    return view('ATM.logoutPage');
 });
