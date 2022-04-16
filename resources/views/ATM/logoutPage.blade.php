@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATM-ID Card</title>
+    <title>ATM</title>
 
     <link href="image/icon.png" rel="shortcut icon"> <!-- icon tab browser -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/atmstyle.css')}}">
@@ -17,10 +17,10 @@
 </head>
 <body>
     <div class="container bg1">
-        <div class="content">
-            <img class="headerLogo" src="{{url('/image/logoBesar.png')}}">
-            <p style="margin-top:11vw; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:3vw">Thank you for using our service</p>
-            <p>I hope you are satisfied with our service!👋</p>
+        <div class="content" style="margin-top:8%">
+            <img style="width:45%" src="{{url('/image/logoBesar.png')}}">
+            <p style="margin-top:3.5%; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:2vw">Thank you for using our service</p>
+            <p style="font-weight:bold; color:#343A40; font-size:2.13vw">I hope you are satisfied with our service!👋</p>
         </div>
     </div>
 </body>

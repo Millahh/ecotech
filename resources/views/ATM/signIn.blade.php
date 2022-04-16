@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATM-Sign In</title>
+    <title>ATM</title>
 
     <link href="image/icon.png" rel="shortcut icon"> <!-- icon tab browser -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
             <p style="margin-top:5.1vw; font-size:3vw; font-weight:bold; color:#343A40">Sign In to ATM</p>
             <p style="font-size:2vw; font-weight:bold; color:#6C757D; margin-top:1vw; margin-bottom:3vw">select method to continue!😉</p>
             <a href="atm-qrcode"><button style="margin-right:14.5vw">QR Code</button></a>
-            <a href="atm-idsalah"><button>ID Card</button></a>
+            <a href="atm-idcard"><button>ID Card</button></a>
         </div>
     </div>
 </body>

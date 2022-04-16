@@ -23,7 +23,7 @@ public function idcard(){
     return view('ATM.IDCard');
 }
 public function idcardPost(Request $request){
-    return redirect('atm-qrcode');
+    return redirect('atm-menu');
     // $users = User::find($AppID);
     // // $AppID = $request->AppID;
     // // $dt = User::where('AppID',$AppID)->first();

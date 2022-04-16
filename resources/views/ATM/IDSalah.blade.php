@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATM-ID Card</title>
+    <title>ATM</title>
 
     <link href="image/icon.png" rel="shortcut icon"> <!-- icon tab browser -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/atmstyle.css')}}">
@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="loader">
-        <img src="{{url('/image/Loader.gif')}}"> 
+        <!-- <img src="{{url('/image/Loader.gif')}}">  -->
     </div>
     <div class="container bg1">
         <img class="headerLogo" src="{{url('/image/rectangle.png')}}">
@@ -27,7 +27,7 @@
         <div class="flex-container">
             <div style="flex-grow: 8"></div>
             <div style="flex-grow: 1"></div>
-            <div style="flex-grow: 1"><a href="atm-idcard"><button class="kanan">Try Again</button></a></div>
+            <div style="flex-grow: 1; margin-top:10.7%"><a href="atm-idcard"><button class="kanan">Try Again</button></a></div>
         </div>
     </div>
 </body>
