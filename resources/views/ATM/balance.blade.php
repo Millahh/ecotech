@@ -17,10 +17,19 @@
 </head>
 <body>
     <div class="container bg1">
+        <img class="headerLogo" src="{{url('/image/logoBesar.png')}}">
         <div class="content">
-            <img class="headerLogo" src="{{url('/image/logoBesar.png')}}">
-            <p style="margin-top:11vw; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:3vw">Thank you for using our service</p>
-            <p>I hope you are satisfied with our service!👋</p>
+            <img class="" src="{{url('/image/wallet-big.png')}}">
+            <p style="margin-top:11vw; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:3vw">Your Balance</p>
+            <div class="total">
+                <p>Balance</p>
+                <p>Rp. 0000</p>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div style="flex-grow: 8"></div>
+            <div style="flex-grow: 1"></div>
+            <div style="flex-grow: 1"><a href="atm-idcard"><button class="kanan">Next</button></a></div>
         </div>
     </div>
 </body>

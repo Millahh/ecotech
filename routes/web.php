@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ATMController;
 use App\Http\Controllers\Controller;
-use App\Models\Users;
 use App\Models\User;
 
 
@@ -43,15 +42,19 @@ Route::get('/atm-qrcode', function () {
     return view('ATM.QRCode');
 });
 
+Route::get('/atm-earning', function () {
+    return view('ATM.earning');
+});
+
 // Route::get('/atm-idcard', function () {
 //     return view('ATM.IDCard');
 // });
 
 Route::get('/atm-idcard', [ATMController::class, 'idcard']);
 
-// Route::get('/atm-idcard', 'ATM@idcard');
+// Route::post('/idcardPost', [ATMController::class, 'idcardPost']);
+
 Route::post('/idcardPost', [ATMController::class, 'idcardPost']);
-// Route::post('/idcardPost', 'ATM@idcardPost')->name('idcardPost');
 
 Route::get('/wallet', function () {
     return view('wallet');
