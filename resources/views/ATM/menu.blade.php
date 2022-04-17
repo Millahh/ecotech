@@ -17,10 +17,16 @@
 </head>
 <body>
     <div class="container bg1">
-        <div class="content" style="margin-top:8%">
-            <img style="width:45%" src="{{url('/image/logoBesar.png')}}">
-            <p style="margin-top:3.5%; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:2vw">Thank you for using our service</p>
-            <p style="font-weight:bold; color:#343A40; font-size:2.13vw">I hope you are satisfied with our service!👋</p>
+        <img class="headerLogo" src="{{url('/image/logoBesar.png')}}">
+        <div class="content">
+            <p style="margin-top:3vw; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:5vw">Menus</p>
+        </div>
+        <div class="flex-container">
+            <div style="flex-grow: 1"><a href="atm-balance"><button style="font-size:1.75vw">View Balance</button></a></div>
+            <div style="flex-grow: 30"></div>
+            <div style="flex-grow: 1"><a href="#"><button style="font-size:1.75vw">Bottle</button></a></div>
+            <div style="flex-grow: 30"></div>
+            <div style="flex-grow: 1"><a href="atm-logout"><button class="red" style="font-size:1.75vw">Log Out</button></a></div>
         </div>
     </div>
 </body>

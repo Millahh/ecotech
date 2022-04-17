@@ -77,15 +77,15 @@ input{
     display: flex;
     align-items: stretch;
     background-color: #f6f6f600;
-    margin-top:11%;
+    /* margin-top:11%; */
   }
   
 .flex-container > div {
     background-color: #f6f6f600;
     margin: 10px;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+    /* line-height: 75px; */
+    /* font-size: 30px; */
   }
 .loader{
     position:fixed;
@@ -98,7 +98,7 @@ input{
 }
 .loader.hidden{
     animation: fadeOut 100s;
-    animation-fil-mode:forwards;
+    /* animation-fil-mode:forwards; */
 }
 @keyframes spin{
     100%{

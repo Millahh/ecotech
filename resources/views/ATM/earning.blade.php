@@ -16,26 +16,25 @@
     <!-- <link rel="stylesheet" href="{{ asset('css/atmstyle.css') }}"> -->
 </head>
 <body>
-    <div class="loader">
-        <!-- <img src="{{url('/image/Loader.gif')}}">  -->
-    </div>
     <div class="container bg1">
-        <img class="headerLogo" src="{{url('/image/rectangle.png')}}">
+        <img class="headerLogo" src="{{url('/image/logoBesar.png')}}">
         <div class="content">
-            <p style="margin-top:11vw; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:3vw">The ID you entered is wrong, please fill in again!</p>
+            <img style="width:14.5%; margin-top:-1%" src="{{url('/image/money.png')}}">
+            <p style="margin-top:-1.2%; font-size:3vw; font-weight:bold; color:#343A40">Your Earning</p>
+            <div style="margin-top:0px" class="flex-container">
+                <div style="flex-grow: 3" class=""total></div>
+                <div style="flex-grow: 4; background-color:white; padding:1.5%; border-radius:5px">
+                    <p class="" style="font-size:18px; text-align:left; font-weight:bold; color:#6C757D">Total Earnings</p>
+                    <p class="" style="font-size:22px; text-align:left; font-weight:bold; color:#212529">Rp. 0000</p>
+                </div>
+                <div style="flex-grow: 3"></div>
+            </div>
         </div>
-        <div class="flex-container">
+        <div class="flex-container" style="margin-top:3%">
             <div style="flex-grow: 8"></div>
             <div style="flex-grow: 1"></div>
-            <div style="flex-grow: 1; margin-top:10.7%"><a href="atm-idcard"><button class="kanan">Try Again</button></a></div>
+            <div style="flex-grow: 1"><a href="atm-idcard"><button class="kanan">Confirmation</button></a></div>
         </div>
     </div>
 </body>
 </html>
-<script src="js/keyboard.js"></script>
-<script type="text/javascript">
-    window.addEventListener("load", function(){
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden"; //loader class
-    });
-</script>

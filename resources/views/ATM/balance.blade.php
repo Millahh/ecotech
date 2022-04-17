@@ -16,12 +16,21 @@
     <!-- <link rel="stylesheet" href="{{ asset('css/atmstyle.css') }}"> -->
 </head>
 <body>
-    <div class="container bg1">
-        <div class="content" style="margin-top:8%">
-            <img style="width:45%" src="{{url('/image/logoBesar.png')}}">
-            <p style="margin-top:3.5%; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:2vw">Thank you for using our service</p>
-            <p style="font-weight:bold; color:#343A40; font-size:2.13vw">I hope you are satisfied with our service!👋</p>
+    <div class="container bg2">
+        <img class="headerLogo" src="{{url('/image/logoBesar.png')}}">
+        <div class="content">
+            <img style="width:11.5%; margin-top:.5%;" src="{{url('/image/wallet-big.png')}}">
+            <p style="margin-top:.1%; font-size:3vw; font-weight:bold; color:#343A40">Your Balance</p>
+            <div style="margin-top:0px" class="flex-container">
+                <div style="flex-grow: 3" class=""total></div>
+                <div style="flex-grow: 4; background-color:white; padding:1.5%; border-radius:5px">
+                    <p class="" style="font-size:18px; text-align:left; font-weight:bold; color:#6C757D">Balance</p>
+                    <p class="" style="font-size:22px; text-align:left; font-weight:bold; color:#212529">Rp. 0000</p>
+                </div>
+                <div style="flex-grow: 3"></div>
+            </div>
         </div>
+        <a href="atm-signin"><button class="red" style="margin-top:4%">Back</button></a>
     </div>
 </body>
 </html>
