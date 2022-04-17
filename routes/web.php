@@ -39,6 +39,22 @@ Route::get('/atm-qrcode', function () {
     return view('ATM.QRCode');
 });
 
+Route::get('/atm-menu', function () {
+    return view('ATM.menuAtm');
+});
+Route::get('/atm-inputBotol', function () {
+    return view('ATM.input-bottle');
+});
+Route::get('/atm-jumlahBotol', function () {
+    return view('ATM.jmlh-bottle');
+});
+Route::get('/atm-succes', function () {
+    return view('ATM.succes-input');
+});
+Route::get('/atm-penghasilan', function () {
+    return view('ATM.penghasilan');
+});
+
 // Route::get('/atm-idcard', function () {
 //     return view('ATM.IDCard');
 // });
