@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.css" >    
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <title>EcoFriendly</title>
   </head>
@@ -23,15 +24,20 @@
 
     </section>
 
-    <section>
+    <section class="content">
         @yield('container')
     </section>
 
     <!-- footer -->
     <section class="footer">
         <footer>
-            @include('partials.footer')
+            @include('partials.footer')                          
         </footer>
+    </section>
+    <section class="footer-mobile">   
+      <footer>
+          @include('partials.footer-mobile')          
+      </footer>         
     </section>
 
     
