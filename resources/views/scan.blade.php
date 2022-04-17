@@ -8,6 +8,9 @@
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 <style>
+    *, ::after, ::before{
+        box-sizing:content-box;
+    }
     ._container{
         padding:8% 6vw;
         /* padding-top:7%; */
@@ -66,7 +69,10 @@
         font-size: 15px;
         color: black;
     }
-    .popup_box .btns{
+    .Aerror .btns{
+        margin: 30px 0 0 0;
+    }
+    .Asuccess .btns{
         margin: 40px 0 0 0;
     }
     .btns2{
@@ -146,7 +152,7 @@
     <label>Are you sure you're logged into Atm?</label>
     <div class="btns">
         <a href="#" class="btn1">No</a>
-        <a href="#" class="btn2">Yes</a>
+        <a href="atm-menu" class="btn2">Yes</a>
     </div>
     </div>
 </div>
@@ -172,17 +178,16 @@
             console.log(`Code matched = ${decodedText}`, decodedResult);
             $('.Asuccess').css("display", "block");
             $('.btn1').click(function(){
-            $('.Asuccess').css("display", "none");
+                $('.Asuccess').css("display", "none");
             });
             $('.btn2').click(function(){
-            $('.Asuccess').css("display", "none");
-            alert("Success logged into ATM.");
+                $('.Asuccess').css("display", "none");
             });
         }
         else{
             $('.Aerror').css("display", "block");
             $('.btn3').click(function(){
-            $('.Aerror').css("display", "none");
+                $('.Aerror').css("display", "none");
             });
         }
     }
