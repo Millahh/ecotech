@@ -17,10 +17,10 @@
         <div class="content">
             <!-- isinya text, barcode -->
             <p style="margin-top:2.5vw; font-size:3vw; font-weight:bold; color:#343A40">QR Code</p>
-            <p style="font-size:2vw; font-weight:bold; color:#6C757D; margin-top:1vw; margin-bottom:3vw">scan the qr code below through the website and your smartphone!️</p>
+            <p style="font-size:2vw; font-weight:bold; color:#6C757D; margin-top:1vw; margin-bottom:3vw">Pindai kode QR di bawah ini melalui situs web dan ponsel cerdas Anda!️</p>
             {!! QrCode::size(180)->generate('MXx1obO9oez0eM0nvLK1cHenOmHpdUtsAwr8d5S3qSkKYIiRGCWry8B44RbjfA9uMcGrzJtlRPycXu9inAMFDU6iYLI7jqaSL');!!}
         </div>
-        <a href="atm-signin"><button class="red">Back</button></a>
+        <a href="atm-signin"><button class="red">Kembali</button></a>
     </div>
 </body>
 </html>

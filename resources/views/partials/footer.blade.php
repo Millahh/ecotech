@@ -13,8 +13,8 @@
             <img class="mx-auto d-block" src="/image/map-icon.png" alt="" width="">
           </div>
           <div class="col-8 px-0 mx-0">
-            <h6 style="font-weight: bold">Universitas Telkom </h6>
-            <h6>Telkom University, Jl. Telekomunikasi No. 1, Terusan Buahbatu - Bojongsoang, Sukapura, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257</h6>
+            <h6 style="font-weight: bold; color:#6C757D">Generation Girl</h6>
+            <h6 style="color:#6C757D">Rumah, Jl. Zamrud 9 No.39, RT.7/RW.8, Grogol Utara, Kec. Kebayoran Lama, Kota Administrasi Jakarta Selatan, DKI Jakarta 12210</h6>
           </div>
       </div>
     </div>
@@ -23,10 +23,19 @@
           <h5>Layanan Kami</h5>
       </div>
       <div class="row pt-4">
-          <h6>Recycle Sampah</h6>
+          <h6  style="color:#6C757D">Recycle Sampah</h6>
       </div>
       <div class="row">
-          <h6>Aplikasi Android</h6>
+          <h6  style="color:#6C757D">Dompet</h6>
+      </div>
+      <div class="row">
+          <h6  style="color:#6C757D">Merchant</h6>
+      </div>
+      <div class="row">
+          <h6  style="color:#6C757D">Lokasi</h6>
+      </div>
+      <div class="row">
+          <h6  style="color:#6C757D">Artikel</h6>
       </div>
     </div>
     <div class="col-4 col-lg-2">

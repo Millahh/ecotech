@@ -26,7 +26,9 @@
     <div style="height:15%; background-color:rgb(243 244 246)"></div>
     <x-jet-authentication-card>
     <img class="logo" src="{{url('/image/logo.png')}}">
-    <p class="title">Adventure starts here 🚀</p>
+    <p class="title mb-1">Petualangan dimulai di sini 🚀</p>
+    <p class="_text">Dapatkan Keuntungan bersama kami di sini!</p>
+
     <!-- <p class="_text">Get Profit with us here!</p> -->
         <x-slot name="logo">
             <img style="display:none" src="{{ asset('image/logo.png') }}" />
@@ -38,23 +40,23 @@
             @csrf
 
             <div>
-                <x-jet-label for="name" style="margin-top:16px; font-size:16px; color:#343A40" value="{{ __('Username') }}" />
-                <x-jet-input id="name" class="block mt-1 w-full" placeholder="Enter your Username" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+                <x-jet-label for="name" style="margin-top:24px; font-size:16px; color:#343A40" value="{{ __('Username') }}" />
+                <x-jet-input id="name" class="block mt-1 w-full" placeholder="Masukkan Username Anda" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
 
             <div class="mt-4">
                 <x-jet-label for="email" style="font-size:16px; color:#343A40" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" placeholder="Enter your Email" type="email" name="email" :value="old('email')" required />
+                <x-jet-input id="email" class="block mt-1 w-full" placeholder="Masukkan Email Anda" type="email" name="email" :value="old('email')" required />
             </div>
 
             <div class="mt-4">
                 <x-jet-label for="password" style="font-size:16px; color:#343A40" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" placeholder="Enter your New Password" type="password" name="password" required autocomplete="new-password" />
+                <x-jet-input id="password" class="block mt-1 w-full" placeholder="Buat Password Baru" type="password" name="password" required autocomplete="new-password" />
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="password_confirmation" style="font-size:16px; color:#343A40" value="{{ __('Confirm Password') }}" />
-                <x-jet-input id="password_confirmation" class="block mt-1 w-full" placeholder="Enter your New Password" type="password" name="password_confirmation" required autocomplete="new-password" />
+                <x-jet-label for="password_confirmation" style="font-size:16px; color:#343A40" value="{{ __('Konfirmasi Password') }}" />
+                <x-jet-input id="password_confirmation" class="block mt-1 w-full" placeholder="Konfirmasi Password" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
@@ -76,10 +78,10 @@
 
             <div class="flex items-center mt-4 mb-3">
                 <button class="py-2" style="background-color:#28DF99; width:100%; color:white; border-radius:6px">
-                    {{ __('Sign Up') }}
+                    {{ __('Buat Akun') }}
                 </button>
             </div>   
-            <p class="_text" style="font-family: Nunito; text-align:center">Already registered? <a class="_text" style="color:#28DF99" href="{{ route('login') }}">Sign In</a></p>
+            <p class="_text" style="font-family: Nunito; text-align:center">Sudah memiliki Akun? <a class="_text" style="color:#28DF99" href="{{ route('login') }}">Masuk</a></p>
         </form>
     </x-jet-authentication-card>
     <div style="height: 8%; background-color:rgb(243 244 246)"></div>

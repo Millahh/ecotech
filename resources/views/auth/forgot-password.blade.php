@@ -32,8 +32,9 @@
             <img style="display:none" src="{{ asset('image/logo.png') }}" />
         </x-slot>
 
-        <p class="title mb-1">Forgot Password? 🔒</p>
-        <p class="_text">Enter your email and we'll send you instructions to reset your password</p>
+        <p class="title mb-1">Lupa kata sandi? 🔒</p>
+        <p class="_text">Masukkan email Anda dan kami akan mengirimkan instruksi untuk mereset kata sandi Anda</p>
+
 
         @if (session('status'))
             <div class="mb-4 font-medium text-sm text-green-600">
@@ -48,17 +49,17 @@
 
             <div class="block">
                 <x-jet-label for="email" style="margin-top:24px; font-size:16px; color:#343A40" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" placeholder="Enter your Email" type="email" name="email" :value="old('email')" required autofocus />
+                <x-jet-input id="email" class="block mt-1 w-full" placeholder="Masukkan Email Anda" type="email" name="email" :value="old('email')" required autofocus />
             </div>
 
             <div class="flex items-center mt-4">
                     <button class="py-2" style="background-color:#28DF99; width:100%; color:white; border-radius:6px">
-                        {{ __('Send Reset Link') }}
+                        {{ __('Kirim Tautan Setel Ulang') }}
                     </button>
             </div>
             <div class="mt-5 mb-2" style="text-align:center">
                 <i class="bi-chevron-left mr-3" role="img" aria-label="back" style="color:#28DF99"></i>
-                <a style="color:#28DF99; padding-top:32px; font-family: Nunito; padding:0 auto" href="{{ route('login') }}"> Back to login</a>
+                <a style="color:#28DF99; padding-top:32px; font-family: Nunito; padding:0 auto" href="{{ route('login') }}"> Kembali untuk masuk</a>
             </div>
         </form>
     </x-jet-authentication-card>

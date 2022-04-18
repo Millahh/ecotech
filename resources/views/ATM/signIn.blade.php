@@ -14,10 +14,10 @@
     <div class="container bg1">
         <img class="headerLogo" src="{{url('/image/logoBesar.png')}}">
         <div class="content">
-            <p style="margin-top:5.1vw; font-size:3vw; font-weight:bold; color:#343A40">Sign In to ATM</p>
-            <p style="font-size:2vw; font-weight:bold; color:#6C757D; margin-top:1vw; margin-bottom:3vw">select method to continue!😉</p>
+            <p style="margin-top:5.1vw; font-size:3vw; font-weight:bold; color:#343A40">Masuk ke ATM</p>
+            <p style="font-size:2vw; font-weight:bold; color:#6C757D; margin-top:1vw; margin-bottom:3vw">pilih metode untuk melanjutkan!😉</p>
             <a href="atm-qrcode"><button style="margin-right:14.5vw">QR Code</button></a>
-            <a href="atm-idcard"><button>ID Card</button></a>
+            <a href="atm-idcard"><button>No Rekening</button></a>
         </div>
     </div>
 </body>

@@ -7,14 +7,14 @@
         <div class="row r-header">
             <div class="col-md-7 isi-header">
                 <div class="row">
-                    <h6 class="judul">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h6>
+                    <h6 class="judul">Ayo tukar botol plastik dengan EcoFriendly </h6>
                 </div>
                 <div class="row">
-                    <h6 class="desk">Website merupakan salah satu sumber informasi yang paling sering diakses. Saat ini, website merupakan media yang wajib dimiliki oleh perusahaan atau instansi maupun start-up.</h6>
+                    <h6 class="desk">EcoFriendly adalah gerakan sosial berbasis platform digital, yang mengajak masyarakat untuk merubah botol plastik yang merusak lingkungan menjadi bermanfaat dan membawa kebaikan.</h6>
                 </div>
                 <div class="row">
                     <div class="col-md pt-4">
-                        <a href="#" class="btn btn-dftr" style="color:white; background-color: #28DF99">Daftar Sekarang</a>
+                        <a href="#" class="btn btn-dftr" style="color:white; background-color: #28DF99">Gabung Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -40,23 +40,23 @@
             </div>
             <div class="card-fitur col-3">
                 <div class="card f-card">
-                    <img src="image/wallet.png" class="card-img-top" alt="...">
+                    <a href="atm-qrcode"><img src="image/wallet.png" class="card-img-top" alt="..."></a>
                     
-                    <h5 class="card-title text-center">Wallet</h5>
+                    <h5 class="card-title text-center">Dompet</h5>
                     
                 </div>
             </div>
             <div class="card-fitur col-3">
                 <div class="card f-card">
                     <img src="image/bag-shop.png" class="card-img-top" alt="...">                
-                    <h5 class="card-title text-center">Marchant</h5>
+                    <h5 class="card-title text-center">Merchant</h5>
                     
                 </div>
             </div>
             <div class="card-fitur col-3">
                 <div class="card f-card">
                     <img src="image/location.png" class="card-img-top" alt="...">                
-                    <h5 class="card-title text-center">Location</h5>                
+                    <h5 class="card-title text-center">Lokasi</h5>                
                 </div>
             </div>
     

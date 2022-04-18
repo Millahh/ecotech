@@ -48,7 +48,7 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '3307'),
-            'database' => env('DB_DATABASE', 'hackherthon'),
+            'database' => env('DB_DATABASE', 'ecofriendly'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', 'bismillahh123'),
             'unix_socket' => env('DB_SOCKET', ''),

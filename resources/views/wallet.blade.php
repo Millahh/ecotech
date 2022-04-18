@@ -7,7 +7,7 @@
 
 <style>
     .wallet-container{
-        padding: 7vw 5.9vw;
+        padding: 7.5vw 5.9vw;
         font-family:'Nunito';
     }
     *{
@@ -56,31 +56,31 @@
 @section('container')
 <div class="wallet-container">
     <div class="d-flex justify-content-between">
-        <p class="uk1">My Wallet</p>
+        <p class="uk1">Dompet</p>
         <h1></h1>
-        <a href="#"><button class="_button" style="margin-top:10%">Back</button></a>
+        <a href="#"><button class="_button" style="margin-top:10%">Kembali</button></a>
     </div>
     <div class="d-flex justify-content-between info_wallet">
         <span>
-            <p style="font-size:100%; font-weight:bold; color:#6C757D">Balance Details</p>
+            <p style="font-size:100%; font-weight:bold; color:#6C757D">Detail Saldo</p>
             <p class="uk1">Rp 11.200.000</p>
         </span>
         <span  class="d-flex">
             <img class="_img p-2" src="{{url('/image/bottle.png')}}" style="height:6.5vw">
             <div>
                 <p class="uk2">190</p>
-                <p style="font-size:100%; color:#6C757D">Bottles Donated</p>
+                <p style="font-size:100%; color:#6C757D">Total Botol</p>
             </div>
         </span>
         <span  class="d-flex">
             <img class="_img p-2" src="{{url('/image/salary.png')}}" style="height:6.5vw">
             <div>
                 <p class="uk2">Rp 320.000</p>
-                <p style="font-size:100%; color:#6C757D">Last Earning</p>
+                <p style="font-size:100%; color:#6C757D">Penghasilan Terakhir</p>
             </div>
         </span>
     </div>
-    <p style="margin-top:2%" class="uk2">Bottle donation history</p>
+        <p style="margin-top:3%" class="uk2">Riwayat Penukaran Botol</p>
     <div>
         <!-- isinya history terhubung ke db -->
     </div>

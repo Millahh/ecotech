@@ -17,7 +17,7 @@ class User extends Authenticatable
     use HasProfilePhoto;
     use Notifiable;
     use TwoFactorAuthenticatable;
-    protected $table = 'users';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -39,7 +39,6 @@ class User extends Authenticatable
         'remember_token',
         'two_factor_recovery_codes',
         'two_factor_secret',
-        'AppID'
     ];
 
     /**
@@ -49,7 +48,6 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'AppID'
     ];
 
     /**
@@ -59,6 +57,5 @@ class User extends Authenticatable
      */
     protected $appends = [
         'profile_photo_url',
-        'AppID'
     ];
 }

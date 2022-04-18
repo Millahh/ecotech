@@ -36,8 +36,9 @@
     <div style="height:15%; background-color:rgb(243 244 246)"></div>
     <x-jet-authentication-card class="p-5">
         <img class="logo" src="{{url('/image/logo.png')}}">
-        <p class="title mb-1">Welcome to Website!👋 </p>
-        <p class="_text">Please Sign-in to your Account and start the Adventure</p>
+        <p class="title mb-1">Selamat datang di Situs Web!👋</p>
+        <p class="_text">Silakan Masuk ke Akun Anda dan mulai Petualangan</p>
+
         <x-slot name="logo">
             <img style="display:none" src="{{ asset('image/logo.png') }}" />
         </x-slot>
@@ -55,31 +56,31 @@
 
             <div>
                 <x-jet-label for="email" style="margin-top:24px; font-size:16px; color:#343A40" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" placeholder="Enter your Username" type="email" name="email" :value="old('email')" required autofocus />
+                <x-jet-input id="email" class="block mt-1 w-full" placeholder="Masukkan email Anda" type="email" name="email" :value="old('email')" required autofocus />
             </div>
 
             <div class="mt-4">
                 <x-jet-label for="password" style="font-size:16px; color:#343A40" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" placeholder="Enter your Password" type="password" name="password" required autocomplete="current-password" />
+                <x-jet-input id="password" class="block mt-1 w-full" placeholder="Masukkan password Anda" type="password" name="password" required autocomplete="current-password" />
             </div>
 
             <div style="margin:3% 0 4% 0">
                 <label for="remember_me">
                     <x-jet-checkbox class="p-2" id="remember_me" name="remember" />
-                    <span class="text-sm text-gray-6002">{{ __('Remember me') }}</span>
+                    <span class="text-sm text-gray-6002">{{ __('Ingat saya') }}</span>
                 </label>
                 @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" style="margin-left:34%" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900" style="margin-left:51%" href="{{ route('password.request') }}">
+                        {{ __('Lupa password?') }}
                     </a>
                 @endif
             </div>
             <div class="flex items-center">
                 <button class="py-2" style="background-color:#28DF99; width:100%; color:white; border-radius:6px">
-                    {{ __('Sign In') }}
+                    {{ __('Masuk') }}
                 </button>
             </div>   
-            <p class="_text" style="padding-top:32px; font-family: Nunito; text-align:center">New on our platform? <a class="_text" style="color:#28DF99" href="{{ route('register') }}">Create an Account</a></p>
+            <p class="_text" style="padding-top:32px; font-family: Nunito; text-align:center">Baru di platform kami? <a class="_text" style="color:#28DF99" href="{{ route('register') }}">Buat Akun</a></p>
 
 </form>
     </x-jet-authentication-card>

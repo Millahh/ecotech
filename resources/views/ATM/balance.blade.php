@@ -20,17 +20,17 @@
         <img class="headerLogo" src="{{url('/image/logoBesar.png')}}">
         <div class="content">
             <img style="width:11.5%; margin-top:.5%;" src="{{url('/image/wallet-big.png')}}">
-            <p style="margin-top:.1%; font-size:3vw; font-weight:bold; color:#343A40">Your Balance</p>
+            <p style="margin-top:.1%; font-size:3vw; font-weight:bold; color:#343A40">Saldo Dompet</p>
             <div style="margin-top:0px" class="flex-container">
                 <div style="flex-grow: 3" class=""total></div>
                 <div style="flex-grow: 4; background-color:white; padding:1.5%; border-radius:5px">
-                    <p class="" style="font-size:18px; text-align:left; font-weight:bold; color:#6C757D">Balance</p>
-                    <p class="" style="font-size:22px; text-align:left; font-weight:bold; color:#212529">Rp. 0000</p>
+                <p class="" style="font-size:18px; text-align:left; font-weight:bold; color:#6C757D">Saldo</p>
+                    <p class="" style="font-size:22px; text-align:left; font-weight:bold; color:#212529">Rp 600.000</p>
                 </div>
                 <div style="flex-grow: 3"></div>
             </div>
         </div>
-        <a href="atm-menu"><button class="red" style="margin-top:4%">Back</button></a>
+        <a href="atm-menu"><button class="red" style="margin-top:4%">Kembali</button></a>
     </div>
 </body>
 </html>

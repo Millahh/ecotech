@@ -19,8 +19,8 @@
     <div class="container bg1">
         <div class="content" style="margin-top:8%">
             <img style="width:45%" src="{{url('/image/logoBesar.png')}}">
-            <p style="margin-top:3.5%; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:2vw">Thank you for using our service</p>
-            <p style="font-weight:bold; color:#343A40; font-size:2.13vw">I hope you are satisfied with our service!👋</p>
+            <p style="margin-top:3.5%; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:2vw">Terima kasih telah menggunakan layanan kami</p>
+            <p style="font-weight:bold; color:#343A40; font-size:2.13vw">Kami harap Anda puas dengan layanan kami!👋</p>
         </div>
     </div>
 </body>

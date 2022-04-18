@@ -22,12 +22,12 @@
     <div class="container bg1">
         <img class="headerLogo" src="{{url('/image/rectangle.png')}}">
         <div class="content">
-            <p style="margin-top:11vw; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:3vw">The ID you entered is wrong, please fill in again!</p>
+            <p style="margin-top:11vw; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:3vw">No Rekening yang Anda masukkan salah, silakan isi lagi!</p>
         </div>
         <div class="flex-container">
             <div style="flex-grow: 8"></div>
             <div style="flex-grow: 1"></div>
-            <div style="flex-grow: 1; margin-top:10.7%"><a href="atm-idcard"><button class="kanan">Try Again</button></a></div>
+            <div style="flex-grow: 1; margin-top:10.7%"><a href="atm-idcard"><button class="kanan">Coba Lagi</button></a></div>
         </div>
     </div>
 </body>

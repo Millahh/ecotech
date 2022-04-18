@@ -144,23 +144,23 @@
 
 <div class="_container">
     <p class="_p" style="font-size:24px; color:##343A40; margin-bottom:2%">Scan ATM</p>
-    <p class="_p" style="font-size:16px; margin-bottom:1%; color:#6C757D">Scan to Login to ATM</p>
+    <p class="_p" style="font-size:16px; margin-bottom:1%; color:#6C757D">Scan untuk masuk ke ATM</p>
     <div style="border-radius:5px; height:350px; background-color:#D1D1D1" id="reader" width="600px"></div>
 </div>
 <div class="custom-alert-success">
     <div class="popup_box Asuccess">
-    <label>Are you sure you're logged into Atm?</label>
+    <label>Apakah Anda yakin ingin masuk ke Atm?</label>
     <div class="btns">
-        <a href="#" class="btn1">No</a>
-        <a href="atm-menu" class="btn2">Yes</a>
+        <a href="#" class="btn1">Tidak</a>
+        <a href="atm-menu" class="btn2">Iya</a>
     </div>
     </div>
 </div>
 <div class="custom-alert-error">
     <div class="popup_box Aerror">
-    <label>The QR-Code entered must match the code on the EcoFriendly ATM machine!</label>
+    <label>QR Code yang di scan harus sesuai dengan yang ada di mesin ATM EcoFriendly!</label>
     <div class="btns">
-        <a href="#" class="btn3">Close</a>
+        <a href="#" class="btn3">Tutup</a>
     </div>
     </div>
 </div>

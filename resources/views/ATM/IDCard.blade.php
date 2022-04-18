@@ -20,8 +20,9 @@
         <div class="content">
             <form action="{{ url('/idcardPost') }}" method="POST">
                 @csrf
-                <p style="margin-top:4.3vw; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:2vw">Enter your ID</p>
-                <input class="use-keyboard-input" type="text" placeholder="example : 12022">
+                <p style="margin-top:4.3vw; font-size:3vw; font-weight:bold; color:#343A40; margin-bottom:2vw">Masukan No Rekening</p>
+                <input class="use-keyboard-input" type="text" placeholder="contoh : 12022">
+
             </form>
 
         </div>

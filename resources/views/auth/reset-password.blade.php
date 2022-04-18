@@ -27,8 +27,9 @@
     <div style="height:15%; background-color:rgb(243 244 246)"></div>
     <x-jet-authentication-card>
         <img class="logo" src="{{url('/image/logo.png')}}">
-        <p class="title mb-1">Reset your password🔓 </p>
-        <p class="_text">Please Fill in your New Password</p>
+        <p class="title mb-1">Setel ulang password Anda🔓 </p>
+        <p class="_text">Masukkan password baru Anda</p>
+
         <x-slot name="logo">
             <img style="display:none" src="{{ asset('image/logo.png') }}" />
         </x-slot>
@@ -47,17 +48,17 @@
 
             <div class="mt-4">
                 <x-jet-label for="password" style="font-size:16px; color:#343A40" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" placeholder="Enter your New Password" type="password" name="password" required autocomplete="new-password" />
+                <x-jet-input id="password" class="block mt-1 w-full" placeholder="Masukkan Password baru Anda" type="password" name="password" required autocomplete="new-password" />
             </div>
 
             <div class="mt-4">
                 <x-jet-label for="password_confirmation" style="font-size:16px; color:#343A40" value="{{ __('Confirm Password') }}" />
-                <x-jet-input id="password_confirmation" class="block mt-1 w-full" placeholder="Enter your New Password" type="password" name="password_confirmation" required autocomplete="new-password" />
+                <x-jet-input id="password_confirmation" class="block mt-1 w-full" placeholder="Masukkan kembali Password baru Anda" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
 
             <div class="flex items-center justify-end mt-4">
                 <button class="py-2" style="background-color:#28DF99; width:100%; color:white; border-radius:6px">
-                        {{ __('Reset Password') }}
+                        {{ __('Ubah Password') }}
                 </button>
             </div>
         </form>
