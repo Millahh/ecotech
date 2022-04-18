@@ -35,8 +35,7 @@
             <div class="row r-card justify-content-md-center">
                 <div class="btn-menu col-md-4">
                     <div class="card">
-                    <a href="#" class="btn m-button btn-lg" style="color:white; background-color: #28DF99">Saldo Dompet</a>
-                        
+                    <a href="#" class="btn m-button btn-lg" style="color:white; background-color: #28DF99">Saldo Dompet</a>                        
                     </div>
                 </div>
                 <div class="btn-menu col-md-4">

@@ -34,7 +34,7 @@
                 <h1 class="text-center">Bottle</h1>            
             </div>
             <div class="row text-center py-4">
-                <a href="" style="text-decoration: none !important; color: black;"><i class="fa fa-arrow-down fa-8x"></i></a>
+                <a href="{{ url('/atm-jumlahBotol') }}" style="text-decoration: none !important; color: black;"><i class="fa fa-arrow-down fa-8x"></i></a>
             </div>
             <div class="row py-4">
                 <h3 class="text-center">Masukkan botol ke dalam lubang di bawah!</h3>            

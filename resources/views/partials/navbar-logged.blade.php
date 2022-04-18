@@ -37,7 +37,7 @@
                   <a class="nav-link inline d-flex" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="32" class="rounded-circle me-3">
                     <div class="nama inline d-flex">
-                      <h6 class="me-4">rara</h6>
+                      <h6 class="me-4">{{ auth()->user()->name }}</h6>
                       <i class="fa fa-angle-down"></i>
                     </div>
                   </a>

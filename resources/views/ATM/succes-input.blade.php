@@ -39,9 +39,14 @@
             <div class="row pt-3">
                 <h3 class="text-center">Masukan botol telah berhasil</h3>            
             </div>
+            <?php
+            if(isset($_GET['jmlhBotol'])){
+                $jmlhBotol = $_GET['jmlhBotol'];
+            ?>
             <div class="row py-3">
-                <h3 class="text-center">angka</h3>            
+                <h3 class="text-center"><?php echo $jmlhBotol ?> </h3>            
             </div>
+            <?php } ?>
             <div class="row">
                 <h6 class="text-center" style="color: #28DF99">botol telah ditambahkan</h6>            
             </div>
@@ -55,7 +60,9 @@
             </div>
             <div class="col-6 act-btn selanjutnya">
                 <dv class="card">
-                    <a href="{{ url('/atm-penghasilan') }}" class="btn btn-lg p-3" style="color:white; background-color: #28DF99">Selanjutnya</a>
+                    <!-- @foreach ($data as $item) -->
+                    <a href="{{ url('/atm-earning/'.$data->id) }}" class="btn btn-lg p-3" style="color:white; background-color: #28DF99">Selanjutnya</a>
+                    <!-- @endforeach -->
                 </dv>
             </div>
         </div>

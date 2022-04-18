@@ -10,6 +10,13 @@ class Bottle extends Model
     use HasFactory;
     protected $table = 'bottles';
     protected $fillable = [
-        'harga'
+        'harga',
+        'ukuran'
     ];
+
+    public function show($id)
+    {
+        $botol = Bottle::find($id);
+        return $botol;
+    }
 }
