@@ -50,7 +50,7 @@ Route::get('/atm-signin', function () {
 
 Route::get('/atm-menu', function () {
     return view('ATM.menu');
-});
+})->name('atm-menu');;
 
 Route::get('/atm-qrcode', function () {
     return view('ATM.QRCode');

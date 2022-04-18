@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="loader">
-        <!-- <img src="{{url('/image/Loader.gif')}}">  -->
+        <img src="{{url('/image/Loader.gif')}}"> 
     </div>
     <div class="container bg1">
         <img class="headerLogo" src="{{url('/image/rectangle.png')}}">
