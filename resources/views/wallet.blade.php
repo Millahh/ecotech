@@ -81,6 +81,7 @@
         </span>
     </div>
         <p style="margin-top:3%" class="uk2">Riwayat Penukaran Botol</p>
+        <img class="_img p-2" src="{{url('/image/riwayat.png')}}" style="width:100%">
     <div>
         <!-- isinya history terhubung ke db -->
     </div>
