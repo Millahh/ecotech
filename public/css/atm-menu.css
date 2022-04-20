@@ -114,3 +114,7 @@ body{
     width: 100%; 
     max-width: 800px !important;
 }
+
+.fa-arrow-down:hover{
+    color:grey;
+}

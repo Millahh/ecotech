@@ -152,6 +152,9 @@
                     
             });
         });
+        document.addEventListener("keydown", w => {
+            console.log(w)
+        });
     </script>
 </body>
 </html>
